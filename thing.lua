@@ -1,5 +1,5 @@
 for i,v in pairs(game.Players:GetPlayers()) do
-  if v.Name ~= game.Players.LocalPlayer.Name then
+  if v.Name ~= game.Players.LocalPlayer.Name and v.Character:FindFirstChild('Left Leg') then
     local args = {
     [1] = {
         [1] = {
