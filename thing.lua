@@ -1,0 +1,5 @@
+for i,v in pairs(game.Players:GetPlayers()) do
+  if v.Name ~= game.Players.LocalPlayer.Name then
+    game:GetService("ReplicatedStorage"):WaitForChild("meleeEvent"):FireServer(v)
+  end
+end
